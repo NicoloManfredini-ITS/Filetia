@@ -1,0 +1,354 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xliff version="1.2" xmlns="urn:oasis:names:tc:xliff:document:1.2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="urn:oasis:names:tc:xliff:document:1.2 xliff-core-1.2-transitional.xsd">
+  <file datatype="xml" source-language="en-US" target-language="it-IT" original="Filetia">
+    <body>
+      <group id="body">
+        <trans-unit id="Table 685995813 - Field 3004954119 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Code</source><target>Codice</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table FLT Machine - Field Code - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 685995813 - Field 2808329064 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Lifecycle End Status</source><target>Stato fine ciclo di vita</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table FLT Machine - Field Current Lifecycle End Status - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 685995813 - Field 3461834954 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Description</source><target>Descrizione</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table FLT Machine - Field Description - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 685995813 - Field 480544081 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Lifecycle End Date (Restored)</source><target>Data fine ciclo di vita (ripristino)</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table FLT Machine - Field Lifec. End Date (Rest.) Filter - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 685995813 - Field 4275675415 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Lifecycle End Date</source><target>Data fine ciclo di vita</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table FLT Machine - Field Lifecycle End Date Filter - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 685995813 - Field 4157541879 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Lifecycle Quantity</source><target>Quantità fine ciclo di vita</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table FLT Machine - Field Lifecycle Quantity - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 685995813 - Field 333737676 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Linked to Item No.</source><target>Collegato a articolo nr.</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table FLT Machine - Field Linked to Item No. - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 685995813 - Field 1722062808 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Maintenance Cycle: Quantity</source><target>Ciclo di manutenzione : Quantità</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table FLT Machine - Field Maintenance Cycle: Quantity - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 685995813 - Field 2888021454 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Maintenance Cycle: Time</source><target>Ciclo di manutenzione : Tempo</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table FLT Machine - Field Maintenance Cycle: Time - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 685995813 - Field 3287626243 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Scrap Rate</source><target>Percentuale scarto</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table FLT Machine - Field Scrap Rate - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 685995813 - Field 3287626243 - Method 2126772001 - NamedType 2800128301" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Scrap Rate cannot be negative.</source><target>Percentuale scarto non può essere negativa</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table FLT Machine - Field Scrap Rate - Method OnValidate - NamedType NotNegativeErr</note>
+        </trans-unit>
+        <trans-unit id="Table 685995813 - Field 3287626243 - Method 2126772001 - NamedType 1059991999" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Scrap Rate cannot be greater than 100%.</source><target>Percentuale scarto non può essere superiore a 100%</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table FLT Machine - Field Scrap Rate - Method OnValidate - NamedType NotGreaterThanHundredErr</note>
+        </trans-unit>
+        <trans-unit id="Table 685995813 - Field 1327943232 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Total Parts Produced (Restored)</source><target>Pezzi totali prodotti (ripristino)</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table FLT Machine - Field Total Parts Prod. (Restored) - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 685995813 - Field 793069260 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Total Parts Produced</source><target>Pezzi totali prodotti</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table FLT Machine - Field Total Parts Produced - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 685995813 - Field 3901823281 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Unit Time for Part</source><target>Unità di tempo per pezzo</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table FLT Machine - Field Unit Time for Part - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 778144714 - Field 952633700 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Activity Code</source><target>Cod. attività</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table FLT Maintenance Activity - Field Activity Code - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 778144714 - Field 3461834954 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Description</source><target>Descrizione</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table FLT Maintenance Activity - Field Description - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 778144714 - Field 3554807092 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Machine Code</source><target>Cod. macchina</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table FLT Maintenance Activity - Field Machine Code - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 778144714 - Field 2155264991 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Maintenance Type</source><target>Tipo manutenzione</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table FLT Maintenance Activity - Field Maintenance Type - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 778144714 - Field 2155264991 - Property 62802879" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Time,Parts</source><target>Tempo,Pezzi</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table FLT Maintenance Activity - Field Maintenance Type - Property OptionCaption</note>
+        </trans-unit>
+        <trans-unit id="Table 548192930 - Field 818320351 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Lifecycle End Date</source><target>Data fine ciclo di vita</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table FLT Maintenance Machine - Field Lifecycle End Date - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 548192930 - Field 3081339319 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Lifecycle End Status</source><target>Stato fine ciclo di vita</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table FLT Maintenance Machine - Field Lifecycle End Status - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 548192930 - Field 3554807092 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Machine Code</source><target>Cod. macchina</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table FLT Maintenance Machine - Field Machine Code - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 548192930 - Field 2922612195 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Maint. Parts Counter</source><target>Contatore manutenzione periodica</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table FLT Maintenance Machine - Field Maint. Parts Counter - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 548192930 - Field 50698181 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Maint. Parts Last Date</source><target>Ultima data manutenzione periodica</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table FLT Maintenance Machine - Field Maint. Parts Last Date - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 548192930 - Field 3406493881 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Maint. Parts Q.ty</source><target>Quantità manutenzione periodica</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table FLT Maintenance Machine - Field Maint. Parts Q.ty - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 548192930 - Field 1436174364 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Maint. Time Counter</source><target>Contatore manutenzione oraria</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table FLT Maintenance Machine - Field Maint. Time Counter - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 548192930 - Field 1010035934 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Maint. Time Last Date</source><target>Ultima data manutenzione oraria</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table FLT Maintenance Machine - Field Maint. Time Last Date - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 548192930 - Field 2507535503 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Maint. Time Work</source><target>Ore lavorate per manutenzione oraria</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table FLT Maintenance Machine - Field Maint. Time Work - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Codeunit 3174341023 - Method 1253807391 - NamedType 2900302849" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Do you want to apply new parts maintenance on machine no. %1?</source><target>Vuoi registrare una nuova manutenzione periodica sulla macchina nr. %1?</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Codeunit FLT Custom Mgt. - Method ApplyPartsMaintenance - NamedType ApplyPartsMaintenanceLbl</note>
+        </trans-unit>
+        <trans-unit id="Codeunit 3174341023 - Method 1253807391 - NamedType 2597211119" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Operation annulled.</source><target>Operazione annullata</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Codeunit FLT Custom Mgt. - Method ApplyPartsMaintenance - NamedType OperationAnnulledErr</note>
+        </trans-unit>
+        <trans-unit id="Codeunit 3174341023 - Method 1253807391 - NamedType 417816387" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Operation completed successfully.</source><target>Operazione completata con successo</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Codeunit FLT Custom Mgt. - Method ApplyPartsMaintenance - NamedType OperationCompletedMsg</note>
+        </trans-unit>
+        <trans-unit id="Codeunit 3174341023 - Method 2706589688 - NamedType 1011205266" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Do you want to apply new time maintenance on machine no. %1?</source><target>Vuoi registrare una nuova manutenzione oraria sulla macchina %1?</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Codeunit FLT Custom Mgt. - Method ApplyTimeMaintenance - NamedType ApplyTimeMaintenanceLbl</note>
+        </trans-unit>
+        <trans-unit id="Codeunit 3174341023 - Method 2706589688 - NamedType 2597211119" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Operation annulled.</source><target>Operazione annullata</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Codeunit FLT Custom Mgt. - Method ApplyTimeMaintenance - NamedType OperationAnnulledErr</note>
+        </trans-unit>
+        <trans-unit id="Codeunit 3174341023 - Method 2706589688 - NamedType 417816387" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Operation completed successfully.</source><target>Operazione completata con successo</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Codeunit FLT Custom Mgt. - Method ApplyTimeMaintenance - NamedType OperationCompletedMsg</note>
+        </trans-unit>
+        <trans-unit id="Codeunit 3174341023 - Method 4006989493 - NamedType 2269786190" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Remove link between item no. %1 and machine no. %2?</source><target>Rimuovere collegamento fra articolo nr. %1 e macchina nr. %2?</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Codeunit FLT Custom Mgt. - Method LinkItemToMachine - NamedType RemoveLinkWithMachineCnf</note>
+        </trans-unit>
+        <trans-unit id="Codeunit 3174341023 - Method 4006989493 - NamedType 3923463204" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Link machine no. %1 to item no. %2?</source><target>Collegare la macchina nr. %1 all'articolo nr. %2?</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Codeunit FLT Custom Mgt. - Method LinkItemToMachine - NamedType CreateLinkWithMachineCnf</note>
+        </trans-unit>
+        <trans-unit id="Codeunit 3174341023 - Method 4006989493 - NamedType 3174241402" size-unit="char" translate="yes" xml:space="preserve">
+          <source>This machine is already linked to an item. Do you want to continue?</source><target>Questa macchina è già collegata ad un articolo. Continuare?</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Codeunit FLT Custom Mgt. - Method LinkItemToMachine - NamedType ConfirmSubstitutionCnf</note>
+        </trans-unit>
+        <trans-unit id="Codeunit 3174341023 - Method 4006989493 - NamedType 2597211119" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Operation annulled.</source><target>Operazione annullata</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Codeunit FLT Custom Mgt. - Method LinkItemToMachine - NamedType OperationAnnulledErr</note>
+        </trans-unit>
+        <trans-unit id="Codeunit 3174341023 - Method 3755157189 - NamedType 1580434318" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Remove link between machine no. %1 and item no. %2?</source><target>Rimuovere collegamento fra macchina nr. %1 e articolo nr. %2?</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Codeunit FLT Custom Mgt. - Method LinkMachineToItem - NamedType RemoveLinkWithItemCnf</note>
+        </trans-unit>
+        <trans-unit id="Codeunit 3174341023 - Method 3755157189 - NamedType 486245460" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Link item no. %1 to machine no. %2?</source><target>Collegare l'articolo nr. %1 alla macchina nr. %2?</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Codeunit FLT Custom Mgt. - Method LinkMachineToItem - NamedType CreateLinkWithItemCnf</note>
+        </trans-unit>
+        <trans-unit id="Codeunit 3174341023 - Method 3755157189 - NamedType 3174241402" size-unit="char" translate="yes" xml:space="preserve">
+          <source>This item is already linked to a different machine. Do you want to continue?</source><target>Questo articolo è già collegato ad una macchina. Continuare?</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Codeunit FLT Custom Mgt. - Method LinkMachineToItem - NamedType ConfirmSubstitutionCnf</note>
+        </trans-unit>
+        <trans-unit id="Codeunit 3174341023 - Method 3755157189 - NamedType 2597211119" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Operation annulled.</source><target>Operazione annullata</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Codeunit FLT Custom Mgt. - Method LinkMachineToItem - NamedType OperationAnnulledErr</note>
+        </trans-unit>
+        <trans-unit id="Codeunit 3174341023 - Method 2666206638 - NamedType 2934919370" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Do you want to set %1 on %2?</source><target>Vuoi impostare %1 su %2?</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Codeunit FLT Custom Mgt. - Method SetStatusOnMachine - NamedType ConfirmChangeStatusOnMachineLbl</note>
+        </trans-unit>
+        <trans-unit id="Codeunit 3174341023 - Method 2666206638 - NamedType 1406544340" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Operation annulled.</source><target>Operazione annullata</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Codeunit FLT Custom Mgt. - Method SetStatusOnMachine - NamedType AnnulledErr</note>
+        </trans-unit>
+        <trans-unit id="Codeunit 3174341023 - Method 2666206638 - NamedType 417816387" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Operation completed successfully.</source><target>Operazione completata con successo</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Codeunit FLT Custom Mgt. - Method SetStatusOnMachine - NamedType OperationCompletedMsg</note>
+        </trans-unit>
+        <trans-unit id="Page 722445353 - Control 2445482498 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>General</source><target>Generale</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page FLT Machine Card - Control General - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Page 722445353 - Control 350249191 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Maintenance</source><target>Manutenzione</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page FLT Machine Card - Control Maintenance - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Page 722445353 - Control 1458754202 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Maintenance Activities</source><target>Attività di manutenzione</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page FLT Machine Card - Control MaintenanceActivities - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Page 722445353 - Control 1065337893 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Production</source><target>Produzione</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page FLT Machine Card - Control Production - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Page 722445353 - Control 925914770 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Scraped Parts</source><target>Pezzi di scarto</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page FLT Machine Card - Control ScrapedParts - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Page 722445353 - Control 32194649 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Total Time Worked (hrs)</source><target>Tempo totale lavorato (ore)</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page FLT Machine Card - Control TotalTimeWorked - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Page 722445353 - Control 566567565 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Total Time Worked (Restored) (hrs)</source><target>Tempo totale lavorato (ripristino) (ore)</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page FLT Machine Card - Control TotalTimeWorkedRestored - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Page 722445353 - Action 2876958691 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Open Item Card</source><target>Apri scheda articolo</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page FLT Machine Card - Action ItemCard - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Page 4072877051 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Machine List</source><target>Lista macchine</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page FLT Machine List - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Page 4072877051 - Action 2876958691 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Open Item Card</source><target>Apri scheda articolo</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page FLT Machine List - Action ItemCard - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Page 1176345434 - Control 2445482498 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>General</source><target>Generale</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page FLT Machine Maint. Card - Control General - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Page 1176345434 - Control 2718692323 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Maintenance Parts</source><target>Pezzi per manutenzione</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page FLT Machine Maint. Card - Control MaintenanceParts - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Page 1176345434 - Control 2115298044 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Maintenance Time</source><target>Ore per manutenzione</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page FLT Machine Maint. Card - Control MaintenanceTime - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Page 1176345434 - Action 1253807391 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Apply Parts Maintenance</source><target>Registra manutenzione periodica</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page FLT Machine Maint. Card - Action ApplyPartsMaintenance - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Page 1176345434 - Action 2706589688 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Apply Time Maintenance</source><target>Registra manutenzione oraria</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page FLT Machine Maint. Card - Action ApplyTimeMaintenance - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Page 1176345434 - Action 1080453686 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Change Status</source><target>Cambia stato</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page FLT Machine Maint. Card - Action ChangeStatus - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Page 2728337983 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Maintenance Activity Subpage</source><target>Attività di manutenzione</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page FLT Maint. Activity Subpage - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="PageExtension 1488498935 - Action 4020773697 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Page 1434786627">
+          <source>Open Machine Card</source><target>Apri scheda macchina</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">PageExtension FLTP56000 - Action FLTMachineCard - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="TableExtension 1502249019 - Field 437260938 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Table 3276313895">
+          <source>Machine Code</source><target>Cod. macchina</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">TableExtension FLTT56000 - Field FLT Machine Code - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="TableExtension 2139945636 - Field 324181793 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Table 4145206282">
+          <source>Machine Nos.</source><target>Nr. macchine</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">TableExtension FLTT56001 - Field FLT Machine Nos. - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Enum 482708373 - EnumValue 1371923692 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source> </source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Enum FLT Lifecycle End Status - EnumValue   - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Enum 482708373 - EnumValue 4004713366 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Discard</source><target>Smaltito</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Enum FLT Lifecycle End Status - EnumValue Discard - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Enum 482708373 - EnumValue 2914340940 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Restore</source><target>Ripristino</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Enum FLT Lifecycle End Status - EnumValue Restore - Property Caption</note>
+        </trans-unit>
+      </group>
+    </body>
+  </file>
+</xliff>
