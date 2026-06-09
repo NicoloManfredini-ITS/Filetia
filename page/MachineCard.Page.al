@@ -3,7 +3,7 @@ page 56000 "FLT Machine Card"
     PageType = Card;
     ApplicationArea = All;
     SourceTable = "FLT Machine";
-    
+
     layout
     {
         area(Content)
@@ -18,7 +18,7 @@ page 56000 "FLT Machine Card"
             group(Maintenance)
             {
                 Caption = 'Maintenance';
-                field("Lifecycle Quantity";Rec."Lifecycle Quantity") { }
+                field("Lifecycle Quantity"; Rec."Lifecycle Quantity") { }
                 field("Maintenance Cycle: Quantity"; Rec."Maintenance Cycle: Quantity") { }
                 field("Maintenance Cycle: Time"; Rec."Maintenance Cycle: Time") { }
             }
@@ -32,12 +32,24 @@ page 56000 "FLT Machine Card"
                     Editable = false;
                 }
                 field("Total Parts Produced"; Rec."Total Parts Produced") { }
+                field(TotalTimeWorkedRestored; CalcTotalTimeWorkedRestored())
+                {
+                    Caption = 'Total Time Worked (Restored) (hrs)';
+                    Editable = false;
+                }
+                field("Total Parts Prod. (Restored)"; Rec."Total Parts Prod. (Restored)") { }
                 field("Scrap Rate"; Rec."Scrap Rate") { }
                 field(ScrapedParts; CalcScrapedParts())
                 {
                     Caption = 'Scraped Parts';
                     Editable = false;
                 }
+            }
+            part(MaintenanceActivities; "FLT Maint. Activity Subpage")
+            {
+                Caption = 'Maintenance Activities';
+                ApplicationArea = All;
+                SubPageLink = "Machine Code" = field(Code);
             }
         }
     }
@@ -57,16 +69,36 @@ page 56000 "FLT Machine Card"
         }
     }
 
+    trigger OnAfterGetRecord()
+    var
+        MaintenanceMachine: Record "FLT Maintenance Machine";
+    begin
+        Rec.SetRange("Lifecycle End Date Filter");
+        Rec.SetRange("Lifec. End Date (Rest.) Filter", 0D);
+
+        if MaintenanceMachine.Get(Rec.Code) then
+            if MaintenanceMachine."Lifecycle End Date" > 0D then begin
+                Rec.SetFilter("Lifecycle End Date Filter", '..%1', MaintenanceMachine."Lifecycle End Date");
+                Rec.SetFilter("Lifec. End Date (Rest.) Filter", '%1..', MaintenanceMachine."Lifecycle End Date");
+            end;
+    end;
+
     local procedure CalcTotalTimeWorked(): Decimal
     begin
         Rec.CalcFields("Total Parts Produced");
         exit(Rec."Total Parts Produced" * Rec."Unit Time for Part" / 3600000);
     end;
 
+    local procedure CalcTotalTimeWorkedRestored(): Decimal
+    begin
+        Rec.CalcFields("Total Parts Prod. (Restored)");
+        exit(Rec."Total Parts Prod. (Restored)" * Rec."Unit Time for Part" / 3600000);
+    end;
+
     local procedure CalcScrapedParts(): Integer
     begin
         Rec.CalcFields("Total Parts Produced");
-        exit(Round(Rec."Total Parts Produced" * Rec."Scrap Rate" / 100, 1));
+        exit(Round(Rec."Total Parts Produced" * Rec."Scrap Rate" / 100, 1, '>'));
     end;
 
 }

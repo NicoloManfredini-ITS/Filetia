@@ -3,7 +3,7 @@ table 56000 "FLT Machine"
     DataClassification = CustomerContent;
     LookupPageId = "FLT Machine List";
     DrillDownPageId = "FLT Machine List";
-    
+
     fields
     {
         field(1; Code; Code[20])
@@ -39,7 +39,14 @@ table 56000 "FLT Machine"
             Caption = 'Total Parts Produced';
             Editable = false;
             FieldClass = FlowField;
-            CalcFormula = Sum("Sales Shipment Line"."Quantity" where (Type = CONST(Item), "No." = field("Linked to Item No.")));
+            CalcFormula = Sum("Sales Shipment Line"."Quantity" where(Type = CONST(Item), "No." = field("Linked to Item No."), "Posting Date" = field("Lifecycle End Date Filter")));
+        }
+        field(11; "Total Parts Prod. (Restored)"; Integer)
+        {
+            Caption = 'Total Parts Produced (Restored)';
+            Editable = false;
+            FieldClass = FlowField;
+            CalcFormula = Sum("Sales Shipment Line"."Quantity" where(Type = CONST(Item), "No." = field("Linked to Item No."), "Posting Date" = field("Lifec. End Date (Rest.) Filter")));
         }
         field(20; "Lifecycle Quantity"; Integer)
         {
@@ -64,15 +71,31 @@ table 56000 "FLT Machine"
                 CustomMgt.LinkMachineToItem(Rec.Code, Rec."Linked to Item No.", xRec."Linked to Item No.");
             end;
         }
+        field(200; "Current Lifecycle End Status"; Enum "FLT Lifecycle End Status")
+        {
+            Caption = 'Lifecycle End Status';
+        }
+        field(201; "Lifecycle End Date Filter"; Date)
+        {
+            Caption = 'Lifecycle End Date';
+            Editable = false;
+            FieldClass = FlowFilter;
+        }
+        field(202; "Lifec. End Date (Rest.) Filter"; Date)
+        {
+            Caption = 'Lifecycle End Date (Restored)';
+            Editable = false;
+            FieldClass = FlowFilter;
+        }
     }
-    
+
     keys
     {
         key(PK; Code)
         {
             Clustered = true;
         }
-    }    
+    }
 
     trigger OnInsert()
     var
