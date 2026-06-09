@@ -12,6 +12,7 @@ table 56002 "FLT Maintenance Activity"
         field(2; "Activity Code"; Code[20])
         {
             Caption = 'Activity Code';
+            Editable = false;
         }
         field(3; "Maintenance Type"; Option)
         {
