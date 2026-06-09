@@ -34,14 +34,14 @@ table 56000 "FLT Machine"
                     Error(NotGreaterThanHundredErr);
             end;
         }
-        field(10; "Total Parts Produced"; Integer)
+        field(10; "Total Parts Produced"; Decimal)
         {
             Caption = 'Total Parts Produced';
             Editable = false;
             FieldClass = FlowField;
             CalcFormula = Sum("Sales Shipment Line"."Quantity" where(Type = CONST(Item), "No." = field("Linked to Item No."), "Posting Date" = field("Lifecycle End Date Filter")));
         }
-        field(11; "Total Parts Prod. (Restored)"; Integer)
+        field(11; "Total Parts Prod. (Restored)"; Decimal)
         {
             Caption = 'Total Parts Produced (Restored)';
             Editable = false;
