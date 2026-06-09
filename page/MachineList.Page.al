@@ -33,6 +33,22 @@ page 56001 "FLT Machine List"
                 RunObject = page "Item Card";
                 RunPageLink = "No." = field("Linked to Item No.");
             }
+            action(MachineCard)
+            {
+                ApplicationArea = All;
+                Caption = 'Open Machine Card';
+                Image = Card;
+                RunObject = page "FLT Machine Card";
+                RunPageLink = Code = field(Code);
+            }
+            action(MaintenanceCard)
+            {
+                ApplicationArea = All;
+                Caption = 'Maintenance Card';
+                Image = Card;
+                RunObject = page "FLT Machine Maint. Card";
+                RunPageLink = "Machine Code" = field(Code);
+            }
         }
     }
 }

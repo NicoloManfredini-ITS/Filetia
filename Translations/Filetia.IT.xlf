@@ -348,6 +348,21 @@
           <note from="Developer" annotates="general" priority="2"></note>
           <note from="Xliff Generator" annotates="general" priority="3">Enum FLT Lifecycle End Status - EnumValue Restore - Property Caption</note>
         </trans-unit>
+        <trans-unit id="Page 4072877051 - Action 2212825475 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Open Machine Card</source><target>Apri scheda macchina</target>
+          <note from="Developer" annotates="general" priority="2" />
+          <note from="Xliff Generator" annotates="general" priority="3">Page FLT Machine List - Action MachineCard - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Page 4072877051 - Action 127347619 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Maintenance Card</source><target>Scheda macchina</target>
+          <note from="Developer" annotates="general" priority="2" />
+          <note from="Xliff Generator" annotates="general" priority="3">Page FLT Machine List - Action MaintenanceCard - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="TableExtension 2139945636 - Field 924493122 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Table 4145206282">
+          <source>Maint. Activity Nos.</source><target>Nr. attività di manutenzioner</target>
+          <note from="Developer" annotates="general" priority="2" />
+          <note from="Xliff Generator" annotates="general" priority="3">TableExtension FLTT56001 - Field FLT Maint. Activity Nos. - Property Caption</note>
+        </trans-unit>
       </group>
     </body>
   </file>
