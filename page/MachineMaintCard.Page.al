@@ -29,6 +29,12 @@ page 56002 "FLT Machine Maint. Card"
                 field("Maint. Parts Last Date"; Rec."Maint. Parts Last Date") { }
                 field("Maint. Parts Counter"; Rec."Maint. Parts Counter") { }
             }
+            part(MaintenanceActivities; "FLT Maint. Activity Subpage")
+            {
+                Caption = 'Maintenance Activities';
+                ApplicationArea = All;
+                SubPageLink = "Machine Code" = field("Machine Code");
+            }
         }
     }
 

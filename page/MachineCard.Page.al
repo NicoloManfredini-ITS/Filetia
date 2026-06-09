@@ -45,12 +45,6 @@ page 56000 "FLT Machine Card"
                     Editable = false;
                 }
             }
-            part(MaintenanceActivities; "FLT Maint. Activity Subpage")
-            {
-                Caption = 'Maintenance Activities';
-                ApplicationArea = All;
-                SubPageLink = "Machine Code" = field(Code);
-            }
         }
     }
 
