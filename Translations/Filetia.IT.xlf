@@ -243,11 +243,6 @@
           <note from="Developer" annotates="general" priority="2"></note>
           <note from="Xliff Generator" annotates="general" priority="3">Page FLT Machine Card - Control Maintenance - Property Caption</note>
         </trans-unit>
-        <trans-unit id="Page 722445353 - Control 1458754202 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
-          <source>Maintenance Activities</source><target>Attività di manutenzione</target>
-          <note from="Developer" annotates="general" priority="2"></note>
-          <note from="Xliff Generator" annotates="general" priority="3">Page FLT Machine Card - Control MaintenanceActivities - Property Caption</note>
-        </trans-unit>
         <trans-unit id="Page 722445353 - Control 1065337893 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
           <source>Production</source><target>Produzione</target>
           <note from="Developer" annotates="general" priority="2"></note>
@@ -362,6 +357,11 @@
           <source>Maint. Activity Nos.</source><target>Nr. attività di manutenzione</target>
           <note from="Developer" annotates="general" priority="2" />
           <note from="Xliff Generator" annotates="general" priority="3">TableExtension FLTT56001 - Field FLT Maint. Activity Nos. - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Page 1176345434 - Control 1458754202 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Maintenance Activities</source><target>Attività</target>
+          <note from="Developer" annotates="general" priority="2" />
+          <note from="Xliff Generator" annotates="general" priority="3">Page FLT Machine Maint. Card - Control MaintenanceActivities - Property Caption</note>
         </trans-unit>
       </group>
     </body>
