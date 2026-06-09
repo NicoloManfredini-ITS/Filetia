@@ -7,5 +7,10 @@ tableextension 56001 FLTT56001 extends "Sales & Receivables Setup"
             Caption = 'Machine Nos.';
             TableRelation = "No. Series".Code;
         }
+        field(56001; "FLT Maint. Activity Nos."; Code[20])
+        {
+            Caption = 'Maint. Activity Nos.';
+            TableRelation = "No. Series".Code;
+        }
     }
 }

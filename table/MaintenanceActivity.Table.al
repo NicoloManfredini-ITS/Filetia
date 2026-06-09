@@ -33,4 +33,13 @@ table 56002 "FLT Maintenance Activity"
         }
     }
     
+    trigger OnInsert()
+    var
+        SalesSetup: Record "Sales & Receivables Setup";
+        NoSeriesMgt: Codeunit "No. Series";
+    begin
+        SalesSetup.Get();
+        SalesSetup.TestField("FLT Maint. Activity Nos.");
+        "Activity Code" := NoSeriesMgt.GetNextNo(SalesSetup."FLT Maint. Activity Nos.");
+    end;
 }
