@@ -84,16 +84,22 @@ codeunit 56000 "FLT Custom Mgt."
         MaintenanceMachine.Modify();
 
         Message(OperationCompletedMsg);
-
-        //Da vedere pagine di tipo Dialog in alternativa alle variabili Dialog
     end;
 
     procedure ApplyTimeMaintenance(var MaintenanceMachine: Record "FLT Maintenance Machine")
     var
+        Machine: Record "FLT Machine";
+        TotalTimeWorked: Decimal;
+        NotEnoughTimeErr: Label 'The required time for periodic maintenance has not been reached. Operation cancelled.';
         ApplyTimeMaintenanceLbl: Label 'Do you want to apply new time maintenance on machine no. %1?';
         OperationAnnulledErr: Label 'Operation annulled.';
         OperationCompletedMsg: Label 'Operation completed successfully.';
     begin
+        Machine.Get(MaintenanceMachine."Machine Code");
+        TotalTimeWorked := CalcTotalTimeWorked(Machine);
+        if TotalTimeWorked < Machine."Maintenance Cycle: Time" * (MaintenanceMachine."Maint. Time Counter" + 1) then
+            Error(NotEnoughTimeErr);
+
         if not Confirm(StrSubstNo(ApplyTimeMaintenanceLbl, MaintenanceMachine."Machine Code")) then
             Error(OperationAnnulledErr);
 
@@ -106,10 +112,17 @@ codeunit 56000 "FLT Custom Mgt."
 
     procedure ApplyPartsMaintenance(var MaintenanceMachine: Record "FLT Maintenance Machine")
     var
+        Machine: Record "FLT Machine";
+        NotEnoughPartsErr: Label 'The required number of parts for periodic maintenance has not been reached. Operation cancelled.';
         ApplyPartsMaintenanceLbl: Label 'Do you want to apply new parts maintenance on machine no. %1?';
         OperationAnnulledErr: Label 'Operation annulled.';
         OperationCompletedMsg: Label 'Operation completed successfully.';
     begin
+        Machine.Get(MaintenanceMachine."Machine Code");
+        Machine.CalcFields("Total Parts Produced");
+        if Machine."Total Parts Produced" < Machine."Maintenance Cycle: Quantity" * (MaintenanceMachine."Maint. Parts Counter" + 1) then
+            Error(NotEnoughPartsErr);
+
         if not Confirm(StrSubstNo(ApplyPartsMaintenanceLbl, MaintenanceMachine."Machine Code")) then
             Error(OperationAnnulledErr);
 
@@ -118,5 +131,23 @@ codeunit 56000 "FLT Custom Mgt."
         MaintenanceMachine.Modify();
 
         Message(OperationCompletedMsg);
+    end;
+
+    procedure CalcTotalTimeWorked(Machine: Record "FLT Machine"): Decimal
+    begin
+        Machine.CalcFields("Total Parts Produced");
+        exit(Machine."Total Parts Produced" * Machine."Unit Time for Part" / 3600000);
+    end;
+
+    procedure CalcTotalTimeWorkedRestored(Machine: Record "FLT Machine"): Decimal
+    begin
+        Machine.CalcFields("Total Parts Prod. (Restored)");
+        exit(Machine."Total Parts Prod. (Restored)" * Machine."Unit Time for Part" / 3600000);
+    end;
+
+    procedure CalcScrapedParts(Machine: Record "FLT Machine"): Integer
+    begin
+        Machine.CalcFields("Total Parts Produced");
+        exit(Round(Machine."Total Parts Produced" * Machine."Scrap Rate" / 100, 1, '>'));
     end;
 }

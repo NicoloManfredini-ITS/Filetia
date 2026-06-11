@@ -26,20 +26,20 @@ page 56000 "FLT Machine Card"
             {
                 Caption = 'Production';
                 field("Unit Time for Part"; Rec."Unit Time for Part") { }
-                field(TotalTimeWorked; CalcTotalTimeWorked())
+                field(TotalTimeWorked; CustomMgt.CalcTotalTimeWorked(Rec))
                 {
                     Caption = 'Total Time Worked (hrs)';
                     Editable = false;
                 }
                 field("Total Parts Produced"; Rec."Total Parts Produced") { }
-                field(TotalTimeWorkedRestored; CalcTotalTimeWorkedRestored())
+                field(TotalTimeWorkedRestored; CustomMgt.CalcTotalTimeWorkedRestored(Rec))
                 {
                     Caption = 'Total Time Worked (Restored) (hrs)';
                     Editable = false;
                 }
                 field("Total Parts Prod. (Restored)"; Rec."Total Parts Prod. (Restored)") { }
                 field("Scrap Rate"; Rec."Scrap Rate") { }
-                field(ScrapedParts; CalcScrapedParts())
+                field(ScrapedParts; CustomMgt.CalcScrapedParts(Rec))
                 {
                     Caption = 'Scraped Parts';
                     Editable = false;
@@ -77,22 +77,7 @@ page 56000 "FLT Machine Card"
             end;
     end;
 
-    local procedure CalcTotalTimeWorked(): Decimal
-    begin
-        Rec.CalcFields("Total Parts Produced");
-        exit(Rec."Total Parts Produced" * Rec."Unit Time for Part" / 3600000);
-    end;
-
-    local procedure CalcTotalTimeWorkedRestored(): Decimal
-    begin
-        Rec.CalcFields("Total Parts Prod. (Restored)");
-        exit(Rec."Total Parts Prod. (Restored)" * Rec."Unit Time for Part" / 3600000);
-    end;
-
-    local procedure CalcScrapedParts(): Integer
-    begin
-        Rec.CalcFields("Total Parts Produced");
-        exit(Round(Rec."Total Parts Produced" * Rec."Scrap Rate" / 100, 1, '>'));
-    end;
+    var
+        CustomMgt: Codeunit "FLT Custom Mgt.";
 
 }
